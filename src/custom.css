@@ -1,0 +1,147 @@
+footer {
+  background-color: #b3b3b3;
+}
+
+.container-custom {
+  background-color: #1a202c;
+}
+
+body {
+  background-color: #e9e9e9 !important;
+}
+
+.contain1 {
+  color: white;
+  align-items: center;
+  font-style: Arial;
+}
+
+.containText {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.contain2 {
+  color: black;
+  background-color: #a7a6a4;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.contain3 {
+  align-items: center;
+}
+
+.contain4 {
+  size: flex;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.contain5 {
+  size: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+a:link {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contain3 {
+  font-style: Arial;
+}
+
+
+.navbar li {
+  padding-right: 17px;
+}
+
+.navbar-custom {
+  background-color: #b3b3b3;
+}
+
+.Box1 {
+  display: flex;
+  align-items: center;
+  background: gray.700;
+  border-radius: sm;
+}
+
+.Button1 {
+  background-color: gray.800;
+  border-radius: xl;
+  border: 1px solid transparent;
+  m: 1px;
+  px: 3;
+  height: 38px;
+}
+.button1:hover {
+  border: 1px;
+  border-style: solid;
+  border-color: blue.400;
+  background-color: gray.700;
+}
+
+.Text1 {
+  color: white;
+  font-size: md;
+  font-weight: medium;
+  mr: 2;
+}
+
+.main-app {
+  text-align: center;
+  margin: 20px;
+}
+
+.cta-button {
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  min-width: 250px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.connect-wallet-button {
+  background: rgb(32, 129, 226);
+}
+
+.mint-nft-button {
+  background: rgb(255, 0, 0);
+  line-height: 1.15;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  border: none;
+  margin-top: 1px;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: white;
+  font-size: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  min-width: 150px;
+
+  &:disabled {
+      color: #282c34;
+
+  }
+}
+
+.contain9 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
