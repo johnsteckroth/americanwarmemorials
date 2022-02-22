@@ -1,8 +1,8 @@
 import React from 'react';
 import "../custom.css";
-import LOGO from '../images/Local4_logo.png';
-import LOGO1 from '../images/JasonCarrLive_logo.png';
-import LOGO3 from '../images/JasonCarrLive.png';
+import LOGO from '../images/Local4_logo.jpg';
+import LOGO1 from '../images/JasonCarrLive_logo.jpg';
+import LOGO3 from '../images/JasonCarrLive.jpg';
 import LOGO2 from '../images/LiveStream.jpg';
 
 const WDIV = () => {

@@ -145,3 +145,7 @@ a:hover {
 .alignright {
   float: right;
 }
+
+img.rounded-corners {
+  border-radius: 20px;
+}

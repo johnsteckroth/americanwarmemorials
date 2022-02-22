@@ -1,9 +1,9 @@
 import React from 'react';
 import "../custom.css";
-import LOGO from '../images/Microsoft_logo.png'
-import LOGO1 from '../images/MicrosoftTeams_logo.png'
-import CONF1 from '../images/MSIgnite.png'
-import CONF2 from '../images/SharePointConf.png'
+import LOGO from '../images/Microsoft_logo.jpg'
+import LOGO1 from '../images/MicrosoftTeams_logo.jpg'
+import CONF1 from '../images/MSIgnite.jpg'
+import CONF2 from '../images/SharePointConf.jpg'
 
 const Microsoft = () => {
     

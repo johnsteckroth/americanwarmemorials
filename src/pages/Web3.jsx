@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../custom.css";
-import LOGO from '../images/Web3.png';
+import LOGO from '../images/Web3.jpg';
 import { useEtherBalance, useEthers } from '@usedapp/core';
 import { formatEther } from '@ethersproject/units';
-
 
 const Web3 = () => {
     const { account } = useEthers()
     const etherBalance = useEtherBalance(account)
 
+
     return (
-        <div className="AWM">
+        <div className="Web3">
         <div class="container">
             <div className="contain2">
                 <div class="row align-items-center my-5">
@@ -48,13 +48,9 @@ const Web3 = () => {
                             <ul>
                             <li><strong>Account:</strong> {account ? <>{account && <> {account}</>}</> : 'not connected'}&nbsp; &nbsp;{account ? '💳Nice wallet address you got there💳' : ''}</li>
                             <li><strong>Balance:</strong> {etherBalance ? <>{etherBalance && <> {formatEther(etherBalance)}</>}</> : 'not connected'}&nbsp; &nbsp;{etherBalance ? <>{etherBalance <= 0 ? '💵You are crypto poor. Go get yourself some computer cash💵' : '💰Look at you Mr. Moneybags💰'}</> : ''}</li>
-                                <li>HMMM </li>
-                                <li>ENS: </li>
-                                <li>Something Else</li>
-                                <li>HMMM</li>
-                                
-                                
                             </ul>
+                        <br></br>
+      
                         </div>
                         
                         <div class="col-lg-1">

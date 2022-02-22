@@ -1,6 +1,6 @@
 import React from 'react';
 import "../custom.css";
-import LOGO from '../images/AmericanWarMemorials_logo.png'
+import LOGO from '../images/AmericanWarMemorials_logo.jpg'
 
 const AWM = () => {
     

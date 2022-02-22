@@ -2,11 +2,13 @@ import { useEthers } from '@usedapp/core';
 import "../custom.css";
 import styled from 'styled-components'
 
+
 function ConnectToWalletButton() {
     const { activateBrowserWallet, account } = useEthers()
+    
 return (
     <div>
-        <ConnectButton onClick={() => activateBrowserWallet()}>connect</ConnectButton>
+        <ConnectButton onClick={() => activateBrowserWallet()}>connect wallet</ConnectButton>
     </div>
 );
 }
