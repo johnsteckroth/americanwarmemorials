@@ -1,12 +1,23 @@
 import React, { useState } from 'react';
 import "../custom.css";
 import LOGO from '../images/Web3.jpg';
-import { useEtherBalance, useEthers } from '@usedapp/core';
+import { useEtherBalance, useEthers, useTokenBalance } from '@usedapp/core';
 import { formatEther } from '@ethersproject/units';
+import { getDefaultProvider } from "ethers";
+
+const ENSNFT = '0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85'
 
 const Web3 = () => {
     const { account } = useEthers()
     const etherBalance = useEtherBalance(account)
+    const firstTokenBalance = useTokenBalance(ENSNFT, account)
+    
+    const mainnetProvider = getDefaultProvider();
+    mainnetProvider.lookupAddress(account).then((result) => {
+      document.getElementById("lookup").innerText = ` ${result}`;
+    });
+
+    const ENSNamer = <span id="lookup"/>;
 
 
     return (
@@ -48,7 +59,9 @@ const Web3 = () => {
                             <ul>
                             <li><strong>Account:</strong> {account ? <>{account && <> {account}</>}</> : 'not connected'}&nbsp; &nbsp;{account ? '💳Nice wallet address you got there💳' : ''}</li>
                             <li><strong>Balance:</strong> {etherBalance ? <>{etherBalance && <> {formatEther(etherBalance)}</>}</> : 'not connected'}&nbsp; &nbsp;{etherBalance ? <>{etherBalance <= 0 ? '💵You are crypto poor. Go get yourself some computer cash💵' : '💰Look at you Mr. Moneybags💰'}</> : ''}</li>
+                            <li><strong>Ethereum Name Service (ENS):</strong> {account ? <> {account && <> {ENSNamer}</>}</> : 'not connected'}&nbsp; &nbsp;{account ? <>{firstTokenBalance >= 0.000000000000000001 ? '📛Pretty cool name! You must be a web3 wizard📛' : '🛑You should get yourself an ENS domain🛑'}</> : ''}</li>
                             </ul>
+                            <p>Obviously this is just a taste of what I can do on the frontend. Here we see some conditional renders based on token balances and reverse resolving of an ENS domain name. I can build buttons that interact with smart contracts and can create pages with gated access based on whether a user has a specific NFT in their wallet. Let's build something cool together! </p>
                         <br></br>
       
                         </div>
