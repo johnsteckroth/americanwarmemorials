@@ -7,7 +7,7 @@ function Footer() {
             <footer class="py-3 fixed-bottom">
                 <div class="container">
                     <p class="m-0 text-center text-black">
-                        johnsteckroth.com &copy; 2022 
+                    <div class="nav-text">americanwarmemorials.org &copy; 2024 </div>
                     </p>
                 </div>
             </footer>

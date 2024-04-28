@@ -1,9 +1,9 @@
 import './App.css';
 import Home from './pages/Home.jsx'
-import Microsoft from './pages/Microsoft.jsx'
-import WDIV from './pages/WDIV.jsx'
-import AWM from './pages/AWM.jsx'
-import Web3 from './pages/Web3.jsx'
+import Search from './pages/Search.jsx'
+import Submit from './pages/Submit.jsx'
+import About from './pages/About.jsx'
+import Donate from './pages/Donate.jsx'
 
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
@@ -27,17 +27,17 @@ function App() {
        <Router>
         <Navbar />
          <Switch>
-            <Route path="/Microsoft">
-              <Microsoft />
+            <Route path="/Search">
+              <Search />
             </Route>
-            <Route path="/WDIV">
-              <WDIV />
+            <Route path="/Submit">
+              <Submit />
             </Route>
-            <Route path="/AWM">
-              <AWM />
+            <Route path="/About">
+              <About />
             </Route>
-            <Route path="/Web3">
-              <Web3 />
+            <Route path="/Donate">
+              <Donate />
             </Route>
             <Route path="/">
               <Home />
